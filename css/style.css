@@ -1,5 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;\
+	font-size: 16px;
+	line-height: 26px;
 	color:#7581a1;
 }
 
@@ -37,4 +39,11 @@ a {
 	font-size: 20px;
 	font-weight: 600;
 	color: #192b59;
+}
+.grid-item a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #1085e4;
+
+
 }
