@@ -30,10 +30,37 @@ a {
 	font-weight: 700;
 	padding: 20px 40px;
 	border-radius: 30px;
+	border: 1px solid #1085e4;
+	letter-spacing: 2.6px;
 }
+.btn-primary:hover {
+	background-color: #fff;
+	color: #1085e4;
+}
+.btn-secondary {
+	background-color: #cbdbe8;
+	border: 1px solid #cbdbe8;
+	color: #7e8bae;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 20px 40px;
+	border-radius: 30px;
+	letter-spacing: 2.6px;
+}
+.btn-secondary:hover {
+	background-color: #fff;
+	
+}
+
 .btn-free {
-	color: #fff;
 	font-weight: 400;
+	padding: 21px 57px;
+    letter-spacing: 1.7px;
+}
+.btn-group a + a {
+	margin-left: 15px;
+}	
 	
 }
 .grid h2 {
