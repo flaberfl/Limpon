@@ -52,16 +52,24 @@ a {
 	background-color: #fff;
 	
 }
-
 .btn-free {
 	font-weight: 400;
 	padding: 21px 57px;
     letter-spacing: 1.7px;
 }
+.btn-info {
+	color: #8085b1;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2.6px;
+	text-transform: uppercase;
+	border-color: transparent;
+	border: 1px solid #dce1e5;
+	padding: 20px 40px;
+	border-radius: 30px;
+}
 .btn-group a + a {
 	margin-left: 15px;
-}	
-	
 }
 .grid h2 {
 	font-size: 40px;
