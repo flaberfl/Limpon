@@ -13,10 +13,52 @@ h1 {
 	line-height: 1.1;
 	margin-bottom: 65px;
 }
-.wrap {
-	max-width: 1100px;
+.title-h2 {
+	font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+	
+}
+.title-h2 span {
+	font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3.3px;
+    color: #1085e4;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 11px;
+}
+.title-40 {
+	font-size: 40px;
+	letter-spacing: -1.2px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+}
+.title-40 span {
+	font-size: 18px;
+	letter-spacing: 3.5px;
+	margin-bottom: 20px;
+    font-weight: 800;
+    color: #1085e4;
+    text-transform: uppercase;
+    display: block;
+}
+.page-stat .title-h2, .page-screen .title-h2 {
+	text-align: center;
 	margin: 0 auto;
 }
+.page-stat .title-h2 {
+	max-width: 500px;
+}
+
+.wrap {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
 .nav {
 	font-size: 12px;
 	font-weight: 800;
@@ -44,7 +86,6 @@ a {
 	font-weight: 700;
 	padding: 20px 40px;
 	border-radius: 30px;
-	border: 1px solid #1085e4;
 	letter-spacing: 2.6px;
 }
 .btn-primary:hover {
@@ -114,6 +155,7 @@ a {
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
+	margin-top: 78px;
 }
 .list-stat>li {
 	font-size: 12px;
@@ -127,6 +169,75 @@ a {
 	display: block;
 	font-size: 60px;
 	color: #bacbdc;
-	margin-bottom: 23px;
+	margin-bottom: 19px;
 	letter-spacing: 0;
+}
+.screen {
+	margin-top: 38px;
+	margin-bottom: -7px;
+}
+
+/* Самостоятельно **************************************/
+
+.box-price {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 80px;
+	/* border: 2px solid red; */
+}
+.box-price-item {
+	background-color: #f5faff;
+	min-width: 350px;
+}
+.box-price-item h3 {
+	font-size: 70px;
+	color: #000958;
+	letter-spacing: -2px;
+	margin-top: 90px;
+	margin-bottom: 35px;
+}
+.box-price-item p {
+	font-size: 14px;
+	color: #0084ff;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	
+}
+.box-price-item.active {
+	background-color: #192b59;
+	color: #fff;
+}
+.box-price-item ul {
+	margin-top: 35px;
+	margin-bottom: 61px;
+	list-style-type: none;
+	padding-left: 0;
+	
+}
+.box-price-item li {
+	font-size: 14px;
+	color: #8085b1;
+	margin: 14px;
+}
+/* Самостоятельно **************************************/
+
+
+/* PAGE **************************************************************/
+.page-stat, .page-screen {
+	background-color: #edf6ff;
+	
+}
+.page-stat {
+	padding: 116px 0 100px 0;
+}
+.page-screen {
+	padding: 116px 0 0px 0;
+}
+.page-screen, .page-plan {
+	text-align: center;	
+}
+.page-plan .title-40 {
+	padding: 0;
+	margin: 0;
 }
