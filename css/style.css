@@ -84,7 +84,7 @@ a {
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
-	padding: 20px 40px;
+	padding: 20px 62px;
 	border-radius: 30px;
 	letter-spacing: 2.6px;
 }
@@ -120,7 +120,7 @@ a {
 	text-transform: uppercase;
 	border-color: transparent;
 	border: 1px solid #dce1e5;
-	padding: 20px 40px;
+	padding: 20px 62px;
 	border-radius: 30px;
 	margin-bottom: 80px;
 }
@@ -185,55 +185,66 @@ a {
 	justify-content: space-between;
 	margin: 0 auto;
 	margin-top: 80px;	/* Отступ вверх от тарифов */
-	/* border: 2px solid red; */
 }
 .box-price-item {
 	background-color: #f5faff;
 	min-width: 350px;	/* Ширина блока тарифов */
-	padding-top: 20x;	/* Верхний отступ тарифного блока */
 	padding-bottom: 98px; /* Нижний отступ тарифного блока */
-}
-.box-price-item.active {
-	background-color: #192b59;
-	
-}
-.box-price-item.active h3 {
-	color: #fff;
 }
 .box-price-item h3 {
 	font-size: 70px;
 	color: #000958;
 	letter-spacing: -2px;
-	/*margin-top: 90px;*/
+	margin-top: 90px;
 	margin-bottom: 35px;
+}
+.box-price-item h3 span {
+	margin-bottom: 15px;
+}
+.box-price-item.active h3 {
+	margin-bottom: 15px;
 }
 .box-price-item p {
 	font-size: 14px;
 	color: #0084ff;
 	text-transform: uppercase;
 	letter-spacing: 2.8px;
-	
+}
+.box-price-item span,
+.box-price-item.active span {
+	font-size: 20px;
+}
+.box-price-item span + span,
+.box-price-item.active span + span {
+	color: #7b8ab2;
 }
 
+.box-price-item.active {
+	background-color: #192b59;
+}
+.box-price-item.active h3,
+.box-price-item.active p,
+.box-price-item.active ul {
+	color: #fff;
+}
 .box-price-item ul {
 	margin-top: 35px;	/* Оступ вверх от списка*/
 	margin-bottom: 61px; /* Оступ вниз от списка*/
 	list-style-type: none;
 	padding-left: 0;
-	
-}
-.box-price-item li {
 	font-size: 14px;
 	color: #8085b1;
+}
+.box-price-item li {
 	margin: 14px;
 }
+
 /* Самостоятельно **************************************/
 
 
 /* PAGE **************************************************************/
 .page-stat, .page-screen {
 	background-color: #edf6ff;
-	
 }
 .page-stat {
 	padding: 116px 0 100px 0;
