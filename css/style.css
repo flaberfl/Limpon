@@ -63,7 +63,6 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 54px;
 	margin-bottom: 304px;
 }
 .logo {
@@ -88,6 +87,16 @@ h1 {
 .nav-item {
 	letter-spacing: 2.4px;
 	color: #6e7ea9;
+}
+.screen-img {
+	/* display: block; */
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	width: 894px;
+	height: 730px;
+	position: absolute;
+	right: 0;
+	top: 192px;
 }
 a {
 	text-decoration: none;
@@ -145,6 +154,37 @@ a {
 }
 .btn-group a + a {
 	margin-left: 15px;
+}
+.list-company {
+	padding: 0;
+	max-width: 1110px;
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.list-company-item {
+	display: block;
+}
+.company-one {
+	background-image: url(../img/icon-token.png);
+	width: 198px;
+	height: 58px;
+}
+.company-two {
+	background-image: url(../img/icon-magneto.png);
+	width: 200px;
+	height: 69px;
+}
+.company-three {
+	background-image: url(../img/icon-boohoo.png);
+	width: 201px;
+	height: 47px;
+}
+.company-four {
+	background-image: url(../img/icon-fractal.png);
+	width: 200px;
+	height: 69px;
 }
 .grid h2 {
 	font-size: 40px;
@@ -260,6 +300,15 @@ a {
 	background-image: url(../img/bcground.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 54px 0 330px 0;
+	position: relative;
+}
+.page-company {
+	background-image: url(../img/fon-small.png);
+	/* background-repeat: no-repeat; */
+	background-color: #1e8ce6;
+	background-size: cover;
+	padding: 99px 0 106px;
 }
 .page-stat, .page-screen {
 	background-color: #edf6ff;
