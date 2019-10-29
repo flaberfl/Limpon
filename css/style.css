@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -15,13 +19,16 @@ h1 {
 	line-height: 1.1;
 	margin-bottom: 65px;
 }
+/* h2 {
+	margin: 0;
+	padding: 0;
+} */
 .title-h2 {
 	font-size: 50px;
     font-weight: 600;
     color: #192b59;
     line-height: 1.2;
     letter-spacing: -1.5px;
-	
 }
 .title-h2 span {
 	font-size: 16px;
@@ -48,12 +55,23 @@ h1 {
     text-transform: uppercase;
     display: block;
 }
-.page-stat .title-h2, .page-screen .title-h2 {
+.page-stat .title-h2,
+.page-screen .title-h2 {
 	text-align: center;
 	margin: 0 auto;
 }
 .page-stat .title-h2 {
 	max-width: 500px;
+}
+.page-subscribe .title-h2 {
+	color: #fff;
+	/* margin-top: 0; */
+	margin-bottom: 28px;
+}
+.page-subscribe .title-h2 span {
+	font-size: 14px;
+	margin-top: 65px;
+	margin-bottom: 19px;
 }
 .wrap {
 	max-width: 1110px;
@@ -89,14 +107,14 @@ h1 {
 	color: #6e7ea9;
 }
 .screen-img {
-	/* display: block; */
+	display: block;
 	background-image: url(../img/bg.png);
 	background-repeat: no-repeat;
-	width: 894px;
-	height: 730px;
+	width: 895px;
+	height: 740px;
 	position: absolute;
 	right: 0;
-	top: 192px;
+	top: 196px;
 }
 a {
 	text-decoration: none;
@@ -275,7 +293,7 @@ a {
 .box-price-item.active {
 	background-color: #192b59;
 }
-.box-price-item.active h3,
+.box-price-item.active h3, p, ul
 .box-price-item.active p,
 .box-price-item.active ul {
 	color: #fff;
@@ -294,6 +312,91 @@ a {
 
 /* Самостоятельно **************************************/
 
+.box-subscribe {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+}
+
+.box-subscribe-text {
+	font-size: 18px;
+	max-width: 408px;
+}
+.box-subscribe-user {
+	position: relative;
+}
+/* Стилизация поля ввода эл.почты */
+.box-subscribe-user input {
+	font-size: 14px;
+	color: #fff;
+	border: 2px solid #3f5bb1;
+	/* border: 2px solid red; */
+	border-radius: 45px;
+	background-color: transparent;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 24px 216px 24px 37px;
+}
+.box-subscribe-user .btn-primary {
+	position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 18px 47px;
+}
+
+/* Убрали обводку, возникающую при фокусе в инпуте и на кнопке */
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary { 
+	outline: none;
+}
+
+/* Цвет плейсхолдера кроссбраузно */
+.box-subscribe-user input::-webkit-input-placeholder {color:#b1c3ee;}
+.box-subscribe-user input::-moz-placeholder          {color:#b1c3ee;}
+.box-subscribe-user input:-moz-placeholder           {color:#b1c3ee;}
+.box-subscribe-user input:-ms-input-placeholder      {color:#b1c3ee;}
+
+
+
+.box-subscribe-child {
+	flex-basis: 49%;
+}
+
+/* .subscribe-item {
+
+}
+.subscribe-item span {
+	display: block;
+	font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00bffe;
+	letter-spacing: 3px;
+	margin-bottom: 32px;
+}
+.subscribe-item h2 {
+	font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+	letter-spacing: -1.5px;
+	margin-bottom: 45px;
+} */
+
+
+
+/* .subscribe-item p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #dfe8ff;
+	max-width: 408px;
+	line-height: 1.5;
+}
+.subscribe-img {
+	position: absolute;
+    align-items: center;
+    top: 54px;
+    right: 243px;
+} */
 
 /* PAGE **************************************************************/
 .page-header {
@@ -325,4 +428,16 @@ a {
 .page-plan .title-40 {
 	padding: 0;
 	margin: 0;
+}
+.page-subscribe {
+	padding: 53px 0 53px 0; /* Паддинги от робота вверх, вниз */
+	color: #fff;
+	background: rgba(10,32,144,1);
+	background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=
 }
