@@ -204,6 +204,46 @@ a {
 	width: 200px;
 	height: 69px;
 }
+/* Моросим с Гридами */
+.grid {
+	display: grid;
+	grid-template-areas: "a b c"
+						"d b c"
+						"d f g"
+						"e f g"
+						"e h h";
+	max-width: 1110px;
+	grid-gap: 35px;
+	margin: 0 auto;
+}
+.grid-title {
+	grid-area: a;
+	max-width: 260px;
+	margin-top: 118px;
+}
+.grid-item-1 {
+	grid-area: b;
+}
+.grid-item-2 {
+	grid-area: c;
+}
+.grid-item-3 {
+	grid-area: d;
+	margin-top: 10px;
+}
+.grid-item-4 {
+	grid-area: e;
+}
+.grid-item-5 {
+	grid-area: f;
+}
+.grid-item-6 {
+	grid-area: g;
+}
+.grid-text {
+	grid-area: h;
+}
+
 .grid h2 {
 	font-size: 40px;
 	font-weight: 700;
@@ -219,6 +259,7 @@ a {
 	text-align: center;
 	margin: 0 auto;
 	box-shadow: 0 0 5px #f3f3f3;
+	padding-top: 182px;
 }
 .grid-item h3 {
 	font-size: 20px;
@@ -230,8 +271,8 @@ a {
 	font-size: 14px;
 	font-weight: 600;
 	color: #1085e4;
-	
 }
+
 /* Общий класс для иконок в сетке */
 .grid-icon {
 	background-repeat: no-repeat;
@@ -240,19 +281,19 @@ a {
 }
 /* Вставка иконок в страницу */
 .grid-icon-1 {
-	background-image: url(../img/icon1.png);
-	width: 79px;
-	height: 82px;
-}
-.grid-icon-2 {
 	background-image: url(../img/icon2.png);
 	width: 73px;
 	height: 79px;
 }
-.grid-icon-3 {
+.grid-icon-2 {
 	background-image: url(../img/icon3.png);
 	width: 89px;
 	height: 85px;
+}
+.grid-icon-3 {
+	background-image: url(../img/icon1.png);
+	width: 79px;
+	height: 82px;
 }
 .grid-icon-4 {
 	background-image: url(../img/icon4.png);
