@@ -601,7 +601,9 @@ a {
 	position: relative;
 }
 .page-analytics {
-	background-image: url(../img/bg-anal.png)
+	background-image: url(../img/bg-anal.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .video-app {
 	position: absolute;
