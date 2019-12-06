@@ -108,9 +108,10 @@ h1 {
 	width: 895px;
 	height: 730px;
 	position: absolute;
-	right: -165px;
+	right: 0;
 	top: 196px;
 }
+
 a {
 	text-decoration: none;
 }
@@ -338,7 +339,7 @@ a {
 .page-software-list::-webkit-scrollbar-track-piece {background-color: #f3f6ff;}
 .page-software-list::-webkit-scrollbar-thumb {height: 50px; background-color: #1085e4; border-radius: 10px;}
 
-.page-software-icon {
+.settings-icon {
 	display: block;
 	background-repeat: no-repeat;
 	background-position: -26px 3px;
@@ -585,10 +586,7 @@ a {
 }
 .page-grid {
 	padding: 117px 0 100px 0;
-}
-
-	
-
+}	
 .page-software {
 	padding: 110px 0 168px 0;
 	position: relative;
@@ -603,10 +601,18 @@ a {
 .page-analytics {
 	background-image: url(../img/bg-anal.png);
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
+	background-size: cover;
+	background-position: -324px 0;
+
 }
 .video-app {
 	position: absolute;
 	top: -60px;
     right: -166px;
+}
+
+.flex-analytics {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
