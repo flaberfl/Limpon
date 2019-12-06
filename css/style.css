@@ -366,7 +366,9 @@ a {
 .page-software-flex>div { /* Костыль, для того чтобы достучаться до дочерних элементов блока */
 	flex-basis: 55%;
 }
-.page-software .title-h2 {
+.page-software .title-h2,
+.page-analytics .title-h2,
+.page-analytics-two .title-h2 {
 	max-width: 526px;
     margin-top: 10px;
     margin-bottom: 26px;
@@ -522,6 +524,9 @@ a {
     right: 10px;
     padding: 18px 47px;
 }
+.page-analytics-two .btn-primary {
+	padding: 21px 65px;
+}
 
 /* Убрали обводку, возникающую при фокусе в инпуте и на кнопке */
 .box-subscribe-user input:focus, .box-subscribe-user .btn-primary { 
@@ -563,7 +568,7 @@ a {
 }
 
 .page-screen {
-	padding: 116px 0 0 0;
+	padding: 82px 0 0 0;
 }
 .page-screen, .page-plan {
 	text-align: center;	
@@ -593,17 +598,27 @@ a {
 	overflow: hidden;
 }
 .page-app {
-	padding: 67px 0 92px 0;
+	padding: 67px 0 82px 0;
 }
 .page-app .wrap {
 	position: relative;
 }
-.page-analytics {
-	background-image: url(../img/bg-anal.png);
+.page-analytics, .page-analytics-two {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: -324px 0;
-
+	padding: 115px 0 137px 0;
+}
+.page-analytics{
+	background-color: #edf6ff;
+	background-image: url(../img/bg-anal.png);
+	background-position: -702px 0;
+}
+.page-analytics-two {
+	background-image: url(../img/stat2-2.png);
+	background-position: -170px 0;
+}
+.page-analytics-two .wrap {
+	padding-left: 51px;
 }
 .video-app {
 	position: absolute;
@@ -611,8 +626,15 @@ a {
     right: -166px;
 }
 
-.flex-analytics {
+.flex-analytics, .flex-analytics-two {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.flex-analytics>div, .flex-analytics-two>div {
+	flex-basis: 55%;
+}
+
+.page-analytics-text {
+    margin-bottom: 52px;
 }
