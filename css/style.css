@@ -768,12 +768,19 @@ a {
 	right: 0;
 	margin: 0 auto;
 }
-.box-team-item .btn-more {
+.box-team-item .btn-team {
+	background-color: #f3f3f3;
+	border-radius: 100%;
+	/* display: block; */
 	width: 50px;
 	height: 50px;
-	border-radius: 50px;
-	background-image: url(../img/btn-more.png);
+}
+
+.box-team-item .btn-more {
+	background-image: url(../img/btn-team.png);
 	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 18px 18px;
 	border: none;
 }
 .box-team-item .btn-more:focus {
