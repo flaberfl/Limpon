@@ -8,7 +8,7 @@ body {
 	box-sizing: border-box;
 }
 
-h1, h2 {
+h1, h2, p {
 	margin: 0;
 	padding: 0;
 }
@@ -585,6 +585,9 @@ a {
 .box-price-item.active {
 	background-color: #192b59;
 }
+.box-price-item.active .btn-primary {
+	padding: 20px 60px;
+}
 
 .box-price-item.active h3,
 .box-price-item.active p,
@@ -612,7 +615,6 @@ a {
 .box-subscribe {
 	display: flex;
 	justify-content: space-between;
-	/* align-items: center; */
 }
 
 .box-subscribe-text {
@@ -623,6 +625,9 @@ a {
 
 .box-subscribe-user {
 	position: relative;
+}
+.box-subscribe-user .btn-primary {
+	letter-spacing: 3.7px;
 }
 
 /* Стилизация поля ввода эл.почты */
@@ -685,7 +690,7 @@ a {
 
 .box-clients-item {
 	background-color: #fff;
-	padding: 20px 40px;
+	padding: 34px 41px;
 	border-radius: 10px;
 	flex-basis: 31.5%;
 	box-sizing: border-box;
@@ -695,7 +700,7 @@ a {
 }
 
 .box-clients-item>p {
-	margin-bottom: 9px;
+	margin-bottom: 27px;
 }
 
 .box-clients-item .name {
@@ -746,12 +751,14 @@ a {
 	text-transform: uppercase;
 	color: #1a88e1;
 	letter-spacing: 3px;
+	margin: 16px 0 5px 0;
 }
 .box-team-item .name {
 	font-size: 26px;
 	font-weight: 700;
 	color: #192b59;
 	letter-spacing: -1.2px;
+	margin-bottom: 28px;
 }
 
 .box-team-item .avatar {
@@ -761,6 +768,18 @@ a {
 	right: 0;
 	margin: 0 auto;
 }
+.box-team-item .btn-more {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	background-image: url(../img/btn-more.png);
+	background-repeat: no-repeat;
+	border: none;
+}
+.box-team-item .btn-more:focus {
+	outline: none;
+}
+
 
 /* PAGE **************************************************************/
 .page-header {
